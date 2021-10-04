@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap');
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: "Nunito";
+}
+
+hr{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+::selection{
+    background-color:var(tomato);
+}
+
+.email-pass{
+    display:flex;
+    flex-direction: column;
+    align-content:center;
+    border: 1px solid rgba(0,0,0,.1);
+    margin-top: 3rem;
+    border-bottom-left-radius: 5em;
+    border-bottom-right-radius: 5em;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+    width:35vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background:white;
+    box-shadow:0.0rem 0.3rem rgba(0,0,0,.1);
+    box-sizing: 100%;
+}
+
+.logo{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:9%;
+}
+
+body{
+    background-color: white;
+}
+
+.page-header{
+    text-align: center;
+    padding-top:2.5rem;
+    padding-bottom: 1.5rem;
+    padding-left:10vw;
+    padding-right:10vw;
+    flex-shrink: initial;
+    border:1px solid rgba(0,0,0,.1);
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+    background-color: teal;
+    color:white;
+}
+
+.box2 .eml{
+    display:flex;
+    height:5.7vh;
+    width:32vw;
+    padding-left:1rem;
+    color:lightgray;
+    font-size:larger;
+    border:0.33rem solid rgba(0,0,0,.065);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-top:23px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.box2 .pswrd{
+    display:flex;
+    height:5.7vh;
+    width:32vw;
+    padding-left:1rem;
+    color:lightgray;
+    font-size:larger;
+    border:0.33rem solid rgba(0,0,0,.065);
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.remember-login{
+   text-align:center;
+}
+.remember-login .rmbr{
+    font-size: 13px;
+    color:grey;
+    margin-right:11vw;
+}
+:checked{
+    color:teal;
+}
+
+button{
+    background-color: tomato;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 5em;
+    box-sizing: border-box;
+    justify-content: center;
+    cursor:pointer;
+    margin-top:20px;
+
+}
+
+button:hover{
+    background:var(teal);
+    opacity:0.8;
+}
+
+.idk{
+    margin-top: 20px;
+    margin-bottom: 35px;
+    text-align:center;
+    font-size:12px;
+}
+a:link{
+    color:tomato;
+    text-decoration: none;
+}
+a:hover{
+    color:teal;
+    text-decoration:none;
+}
+
+.box3{
+    text-align: center;
+    margin-top:30px;
+}
+
+.sun{
+    background-color:white;
+    border:4px solid black;
+    color:black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    font-size:15px;
+    font-weight: bold;
+    align-self: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5em;
+    margin-bottom: 4rem;
+    margin-top:1rem;
+}
+

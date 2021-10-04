@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>P6:Sign-Up Page</title>
+    
+    <!---Bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!--Our CSS file-->
+    <link rel="stylesheet" type="text/css" href="P6styles.css"/>
+</head>
+
+<header>
+    <!---Logo-->
+    <img src="Photo from Sofia.jpg" class="logo"/>
+</header>
+
+<body><div class="flexboxParent">
+     <!---Main title-->
+     <div class="maintitle"><b><h2>Sign Up</h2></b></div>
+
+    <!--The form to fill out-->
+    <form action="" class="formbox">
+        <div class="box-1"> <!---Names input-->
+            <input type="text" class="FNtext" placeholder="First name*" required>
+            <input type="text" class="LNtext" placeholder="Last name*" required>
+            <div class=container1><h5>*Mandatory field</h5></div>
+            <hr style="width:94%">
+        </div>
+
+        <div class="box-2"> <!--Email and Password field-->
+            <input type="text" class="email" type="email" name="Email" placeholder="Email" size="40" required>
+            <input type="text" class="password" name="Password" placeholder="Password" size="40" required>
+            <input type="text" class="confpswrd" placeholder="Confirm password" required>
+        </div>
+
+        <div class="container2">
+            <div class="box-2-3"> <!---Newsletter-->
+                <h5>Would you like to sign up for our newsletter?</h5>
+            </div>
+            <div class="box-check-3"> <!--Confirm newsletter-->
+                <label class="newscheckbx"><input type="checkbox" checked="checked" class="chbox1">I want to recieve recipe ideas, special offers and promotions, and information on our products and services</label>
+            </div>
+        </div>
+    
+        <hr style="width:94%"> <!--Line to seperate-->
+
+        <div class="container3"> <!---2nd text container-->
+            <h5>Consent to conditions of Use and Protection</h5>
+            <label class="newscheckbx"><input type="checkbox" checked="checked" class="chbox2">I accept and have read the <span style="color:tomato;font-weight:bold">Conditions of Use and Protection of Personal Information Policy</span></label>
+        </div>
+       
+        <button type="submit" class="create">CREATE ACCOUNT</button>
+        
+        <div class="AHAtext">
+            <h5>Already have an account? <a href="P5text.html" class="SIbutton"><span style="text-decoration:underline";>Sign in</span></a></h5>
+        </div>   
+    </form>
+</div></body>
+<footer>
+</footer>
+</html>

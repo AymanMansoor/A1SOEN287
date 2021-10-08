@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../public/css/backstore.css">
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
+   <title> User List </title>
+</head>
+<body>
+<!-- A horizontal navbar for Header section -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">FoodMoji</a>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Shopping
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Shopping Details</a>
+                  <a class="dropdown-item" href="#">Shopping cart</a>
+                </div>
+            </li>
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Recipes
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Western Plate</a>
+              <a class="dropdown-item" href="#">Eastern Plate</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Categories
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Meat</a>
+              <a class="dropdown-item" href="#">Vegetables</a>
+              <a class="dropdown-item" href="#">Fruits</a>
+              <a class="dropdown-item" href="#">Berries</a>
+              <a class="dropdown-item" href="#">Butter & Eggs</a>
+              <a class="dropdown-item" href="#">Fast Food</a>
+              <a class="dropdown-item" href="#">Oatmeals</a>
+              <a class="dropdown-item" href="#">Dairy</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BackStore </a>
+         </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact US </a>
+         </li>
+         <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- Header Section End -->
+<!--PAGE NAME-->
+<div class="page-name">
+    <div>
+      <h3> User List </h3> 
+    </div>
+</div>
+<!--Page Name End-->
+ <!--Edit order page-->
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgba(204, 204, 204, 0.027);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4c5eaf00;
+  color: rgba(255, 255, 255, 0);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #4562a000;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f200;
+  padding: 20px;
+}
+</style>
+ 
+<div>
+  <form action="/action_page.php">
+    <div style="text-align: Left;">
+        <div>
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tharsipa</td>
+      <td>Nadarajah</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Carla</td>
+      <td>Shawi</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Kaja</td>
+      <td> Nada</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Maryam</td>
+      <td>Toussain</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Alex</td>
+      <td>Leondro</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Luis</td>
+      <td>Pierre</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Ilias</td>
+      <td>Morgan</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Isabelle</td>
+      <td>Garner</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Tokyo</td> 
+      <td>Kevin</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Cayla</td>
+      <td>Justin</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Josee</td>
+      <td>Kris</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+      <tr>
+      <td>Christian</td>
+      <td>Lope</td>
+      <td><span class="btn btn-dark">Edit</span> <span class="btn btn-dark">Delete</span></td>
+    </tr>
+  </tbody>
+</table>
+<span>
+    <span class="btn btn-outline-primary">Add a user</span>
+    <span class="btn btn-outline-success">Save</span>
+</span>
+</div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">NOTE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- Footer -->
+
+<footer class="page-footer font-small stylish-color-dark pt-4">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact US</h5>
+          <p>Connect with Us at FoodMoji</p>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Email</h5>
+          <ul class="list-unstyled">
+              <li>
+              <a href="#!">madhdaks@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+   <hr class="clearfix w-100 d-md-none">
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Phone number</h5>
+          <ul class="list-unstyled">
+            <li>
+  <a href="#!">+1 514 498 999</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none">
+<!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Adress</h5>
+          <ul class="list-unstyled">
+            <li>
+                <a href="#!">1983 Boulevard-Marcel</a>
+              </li>
+            <li>
+              <a href="#!">Canada-Montreal</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <hr>
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <a href="#!" class="btn btn-dark btn-rounded">Sign up!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+
+    <hr>
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <i class="fab fa-dribbble"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">&copy;2021  by FoodMoji
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

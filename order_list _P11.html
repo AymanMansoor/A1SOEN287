@@ -1,283 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Online Grocery ">
+    <meta name="keywords" content="CSS, html, JS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../public/css/backstore.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery</title>
 
-    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
-
-    <title> Order List</title>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-
-<!-- A horizontal navbar for Header section -->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <!-- Brand -->
-    <a class="navbar-brand" href="#">FoodMoji</a>
-  
-    <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                  Shopping
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Shopping Details</a>
-                  <a class="dropdown-item" href="#">Shopping cart</a>
+ 
+    <!-- Header Section Begin -->
+    <header class="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/original_logo.png" alt=""></a>
+                    </div>
                 </div>
-            </li>
-         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Recipes
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Western Plate</a>
-              <a class="dropdown-item" href="#">Eastern Plate</a>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>                        
+                            <li><a href="#">Shopping</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="#">Shopping Details</a></li>
+                                    <li><a href="#">Shopping Cart</a></li>                 
+                                </ul>
+                            </li>
+                            <li><a href="#">Recipes </a>
+                            <ul class="header__menu__dropdown">
+                                <li><a href="./video.html">Eastern Plate</a></li>
+                                <li><a href="#">Western Plate</a></li>                 
+                            </ul>
+                           </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li> <a href="P5/P5text.html"><i class="fa fa-user"></i> Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Categories
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Meat</a>
-              <a class="dropdown-item" href="#">Vegetables</a>
-              <a class="dropdown-item" href="#">Fruits</a>
-              <a class="dropdown-item" href="#">Berries</a>
-              <a class="dropdown-item" href="#">Butter & Eggs</a>
-              <a class="dropdown-item" href="#">Fast Food</a>
-              <a class="dropdown-item" href="#">Oatmeals</a>
-              <a class="dropdown-item" href="#">Dairy</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">BackStore </a>
-         </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact US </a>
-         </li>
-         <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-<!-- Header Section End -->
+         
+        </div>
+    </header>
+    <!-- Header Section End -->
 
-<!--PAGE NAME-->
+    <!-- Side Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <span>Categories</span>
+                        </div>
+                        <ul>
+                            <li><a href="#"> Meat</a></li>
+                            <li><a href="#">Vegetables</a></li>
+                            <li><a href="./fruit.html">Fruit</a></li>
+                            <li><a href="#"> Berries</a></li>
+                            <li><a href="#">Butter & Eggs</a></li>
+                            <li><a href="#">Fastfood</a></li>
+                            <li><a href="#">Oatmeal</a></li>
+                            <li><a href="#">Dairy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">    
+                    <div class="hero__item" >                           
+<!--                      <img src= "img/fruit.png" width = 80% height = 80% />-->
+                          <img src= "img/welcome.jpg" width = 80% height = 80% />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Side Section End -->
+
+    <!--Page Name Begin -->
 <div class="page-name">
-    <div>
-      <h3> Order List</h3> 
-    </div>
+  <p>
+    <div style="text-align: left;">
+    <h3>Order List</h3> 
+  </p>
+  </div>
 </div>
 <!--Page Name End-->
 
-<!--Order List Section-->
-
+ <!--Order list section Begin-->
 <div style="overflow-x:auto;">
-    <div class="user-list">
-        <table class="table table-bordered bg-light">
-            <tr class="Dark">
-                <th scope="col" style="text-align: center;">User Name</th>
-                <th scope="col" style="text-align: center;">Order Number</th>
-                <th scope="col" style="text-align: center;">Order List</th>
-                <th scope="col" style="text-align: center;">Price</th>
-                <th scope="col" style="text-align: center;">Actions</th>
+  <div class="user-list">
+      <table class="table table-bordered bg-light">
+          <tr class="Dark">
+              <th scope="col" style="text-align: center;">User Name</th>
+              <th scope="col" style="text-align: center;">Order Number</th>
+              <th scope="col" style="text-align: center;">Order List</th>
+              <th scope="col" style="text-align: center;">Price</th>
+              <th scope="col" style="text-align: center;">Actions</th>
+          </tr>
+          <tbody>
+              <tr style="text-align: center;">
+                  <td>Luis Pierre</td>
+                  <td>097653</td>
+                  <td>
+                      <h6>Chicken Breast</h6>
+                      <h6>Broccoli</h6>
+                      <h6>Cheddar Cheese</h6>
+                      <h6>Ruspberry</h6>
+                      <h6> 1 dozen of Eggs</h6>
+                      <h6> 2 boxex of Protein bars</h6>
+                  </td>
+                  <td>
+                      <h6> 70$ </h6>
+                  </td>
+                  <td>
+                          <a href="#" class="btn btn-success">Edit</a>
+                          <div class="btn btn-secondary">Add</div>
+                          <div class="btn btn-warning">Delete</div>
+                          </div>
+                  </td>
+
+              </tr>
+              <tr style="text-align: center;">
+                  <td>Tokyo Kevin</td>
+                  <td>086437</td>
+                  <td>
+                      <h6>Almond Milk</h6>
+                      <h6>Spinach</h6>
+                  </td>
+                  <td>
+                      <h6> 12$ </h6>
+                  </td>
+                  <td>
+                      <a href="#" class="btn btn-success">Edit</a>
+                      <div class="btn btn-secondary">Add</div>
+                      <div class="btn btn-warning">Delete</div>
+                      </div>
+                  </td>
+
+              </tr>
+              <tr style="text-align: center;">
+                <td>Cayla Justin</td>
+                <td>12331</td>
+                <td>
+                    <h6>Coca-Cola</h6>
+                    <h6>BBQ chips</h6>
+                    <h6>croissant au chocolat</h6>
+                    <h6>donuts</h6>
+                </td>
+                <td>
+                    <h6> 30$ </h6>
+                </td>
+                <td>
+                    <a href="#" class="btn btn-success">Edit</a>
+                    <div class="btn btn-secondary">Add</div>
+                    <div class="btn btn-warning">Delete</div>
+                    </div>
+                </td>
+
             </tr>
-            <tbody>
-                <tr style="text-align: center;">
-                    <td>George Katouf</td>
-                    <td>097653</td>
-                    <td>
-                        <h6>Chicken Breast</h6>
-                        <h6>Broccoli</h6>
-                        <h6>Cheddar Cheese</h6>
-                        <h6>Ruspberry</h6>
-                        <h6> 1 dozen of Eggs</h6>
-                        <h6> 2 boxex of Protein bars</h6>
-                    </td>
-                    <td>
-                        <h6> 70$ </h6>
-                    </td>
-                    <td>
-                            <a href="#" class="btn btn-dark">Edit</a>
-                            <div class="btn btn-dark">Add</div>
-                            <div class="btn btn-dark">Delete</div>
-                            </div>
-                    </td>
+              <tr style="text-align: center;">
+                  <td>Talin Patel</td>
+                  <td>121345</td>
+                  <td>
+                      <h6>BlackBerry</h6>
+                      <h6>10 Apples</h6>
+                      <h6>2 HotDog sandwich</h6>
+                      <h6>tomatoes</h6>
+                      <h6>500g Steak</h6>
+                  </td>
+                  <td>
+                      <h6> $90 </h6>
+                  </td>
+                  <td>
+                      <a href="#" class="btn btn-success">Edit</a>
+                      <div class="btn btn-secondary">Add</div>
+                      <div class="btn btn-warning">Delete</div>
+                      </div>
+                  </td>
 
-                </tr>
-                <tr style="text-align: center;">
-                    <td>Daniella Sargi</td>
-                    <td>086437</td>
-                    <td>
-                        <h6>Almond Milk</h6>
-                        <h6>Spinach</h6>
-                    </td>
-                    <td>
-                        <h6> 12$ </h6>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-dark">Edit</a>
-                        <div class="btn btn-dark">Add</div>
-                        <div class="btn btn-dark">Delete</div>
-                        </div>
-                    </td>
+              </tr>
+              <tr style="text-align: center;">
+                  <td>Marian Kandalaft</td>
+                  <td>987522</td>
+                  <td>
+                      <h6>Bannana</h6>
+                      <h6>Orange Juice</h6>
+                      <h6>Oats biscuits</h6>
+                      <h6>White bread</h6>
+                      <h6>Salmon</h6>
+                      <h6>Burger Sandwich</h6>
+                  </td>
+                  <td>
+                      <h6> 120$ </h6>
+                  </td>
+                  <td>
+                      <a href="#" class="btn btn-success">Edit</a>
+                      <div class="btn btn-secondary">Add</div>
+                      <div class="btn btn-warning">Delete</div>
+                      </div>
+                  </td>
 
-                </tr>
-                <tr style="text-align: center;">
-                    <td>Myriam Shawi</td>
-                    <td>121345</td>
-                    <td>
-                        <h6>BlackBerry</h6>
-                        <h6>10 Apples</h6>
-                        <h6>2 HotDog sandwich</h6>
-                        <h6>tomatoes</h6>
-                        <h6>500g Steak</h6>
-                    </td>
-                    <td>
-                        <h6> $90 </h6>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-dark">Edit</a>
-                        <div class="btn btn-dark">Add</div>
-                        <div class="btn btn-dark">Delete</div>
-                        </div>
-                    </td>
+              </tr>
+              <tr style="text-align: center;">
+               <td>Myriam White</td>
+                <td>234233</td>
+                <td>
+                    <h6>BlackBerry</h6>
+                    <h6>Salmon</h6>
+                    <h6>Water bottle</h6>
+                    <h6>Chicken Breast</h6>
+                </td>
+                <td>
+                    <h6> 55$ </h6>
+                </td>
+                <td>
+                    <a href="#" class="btn btn-success">Edit</a>
+                    <div class="btn btn-secondary">Add</div>
+                    <div class="btn btn-warning">Delete</div>
+                    </div>
+                </td>
 
-                </tr>
-                <tr style="text-align: center;">
-                    <td>Nadine Lakah</td>
-                    <td>987522</td>
-                    <td>
-                        <h6>Bannana</h6>
-                        <h6>Orange Juice</h6>
-                        <h6>Oats biscuits</h6>
-                        <h6>White bread</h6>
-                        <h6>Salmon</h6>
-                        <h6>Burger Sandwich</h6>
-                    </td>
-                    <td>
-                        <h6> 120$ </h6>
-                    </td>
-                    <td>
-                        <a href="#" class="btn btn-dark">Edit</a>
-                        <div class="btn btn-dark">Add</div>
-                        <div class="btn btn-dark">Delete</div>
-                        </div>
-                    </td>
-
-                </tr>
-                </table>
-            </div>
+            </tr>
+              </table>
+          </div>
 </div>
-<!-- Footer -->
-<footer class="page-footer font-small stylish-color-dark pt-4">
+ <!--Order list section End-->
 
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-  
-      <!-- Grid row -->
+ <!-- Footer Section Begin -->
+ <footer class="footer">
+  <div class="container">
       <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-4 mx-auto">
-  
-          <!-- Content -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact US</h5>
-          <p>Connect with Us at FoodMoji</p>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
-  
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Email</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">madhdaks@gmail.com</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
-  
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Phone number</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">+1 514 498 999</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
-  
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Adress</h5>
-  
-          <ul class="list-unstyled">
-            <li>
-                <a href="#!">1983 Boulevard-Marcel</a>
-              </li>
-            <li>
-              <a href="#!">Canada-Montreal</a>
-            </li>
-          </ul>
-        </div>
-        <!-- Grid column -->
+          <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer__about">
+                  <h6>Contact us </h6>
+                  <ul>
+                      <li>Montreal, QC</li>
+                      <li>Phone:(514) 800-8001 </li>
+                      <li>Email:info@foodmoji.com </li>
+                      <li>7869 Rue Tonty, Montreal QC, Y7A 9B8</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+              <div class="footer__widget">
+                  <h6>Join US</h6>
+                  <div class="footer__widget__social">
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>                  
+                  </div>
+              </div>
+          </div>
       </div>
-      <!-- Grid row -->
-    </div>
-    <!-- Footer Links end -->
-    <hr>
-    <!-- Call to join the store -->
-    <ul class="list-unstyled list-inline text-center py-2">
-      <li class="list-inline-item">
-        <a href="#!" class="btn btn-dark btn-rounded">Sign up!</a>
-      </li>
-    </ul>
-    <!-- end call -->
-    <hr>
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">&copy;2021  by FoodMoji
-    </div>
-    <!-- Copyright end -->
-  </footer>
-  <!-- Footer end -->
-  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="footer__copyright">
+                  <div class="footer__copyright__text">
+            Copyright &copy;2021  by Foodmoji       
+              </div>
+          </div>
+      </div>
+      </div></div>
+</footer>
+<!-- Footer Section End -->
 </body>
 </html>

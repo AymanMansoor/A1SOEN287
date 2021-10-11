@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!---Doc info-->
+<head>
+    <title> P5: Sign-in page </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="P5styles.css"/>
+</head>
+
+<!--- header for logo-->
+<header>
+    <div class="logotop">
+        <img src="Screen Shot 2021-10-10 at 10.38.47 PM.png" class="logo"/>
+    </div>
+</header>
+
+<!---Body for the sign-up info-->
+<body>
+<div class="container">
+    <form action="" class="email-pass">
+        <div class="page-header">
+            <b><h3>Already have an account? Sign in</h3></b>
+        </div>
+    
+        <div class="box2">    
+            <input type="text" placeholder="Email" type="email" name="eml" class="eml" size="40" required>
+            <input type="text" placeholder="Password" name="pswrd" class="pswrd" size="40" required>
+        </div>
+    
+        <div class="remember-login">
+            <label class="rmbr"> 
+                <input type="checkbox" name="remember" checked="checked"/>Remember me
+            </label>
+       
+            <button type="submit">LOG IN</button>
+        </div>
+    
+        <div class="forgot-pass-link">
+            <a href="#" class="idk">Forgot your password?</a> 
+        </div> 
+        
+        <hr style="width:80%">
+    
+        <div class="box3">
+            <b><h3>Don't have an account?</h3></b>
+            <a href="#" class="sun" role="button">SIGN UP NOW</a>
+        </div>
+    </form>
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+    <h5><b>Contact Us</b></h5>
+    <h5>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+        <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+      </svg> 1983 Boulevard Marcel, Montreal Qc, Canada
+    </h5> 
+
+    <h5> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+          </svg> emojifood@emojifood.com
+    </h5> 
+
+    <h5>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>  +1 (514) 498-9999
+    </h5>
+
+    <h5> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16">
+            <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
+        </svg> FoodMoji
+    </h5>
+</footer>
+
+</html>

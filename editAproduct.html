@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Online Grocery ">
+    <meta name="keywords" content="CSS, html, JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Grocery</title>
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+ 
+    <!-- Header Section Begin -->
+    <header class="header">      
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/mainlogo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>                        
+                            <li><a href="#">Shopping</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="#">Shopping Details</a></li>
+                                    <li><a href="#">Shopping Cart</a></li>                 
+                                </ul>
+                            </li>
+                            <li><a href="#">Recipes </a>
+                            <ul class="header__menu__dropdown">
+                                <li><a href="./video.html">Eastern Plate</a></li>
+                                <li><a href="#">Western Plate</a></li>                 
+                            </ul>
+                           </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                            <li> <a href="#"><i class="fa fa-user"></i> Login</a></li>
+                            <li><a href="./ProductList.html">All Products</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+         
+        </div>
+    </header>
+    <!-- Header Section End -->
+    <!--Page Name Begin -->
+    <div class="page-name">
+        <p>
+          <div style="text-align: left;">
+          <h3>Product Modification</h3> 
+        </p>
+        </div>
+      </div>
+      <!--Page Name End-->
+      
+      <!--Order modification section Begin-->
+      <p>Use this form to provide us with your product preferences and changes. </p>
+      <section class="backstore-12">
+        <div style="text-align: center;">
+            <div>
+                <h2 class="text-muted mt-4">
+                    Product Name
+                </h2>
+                <input type="text"> 
+            </div>
+            <br>
+            <div>
+                <h2 class="text-muted mt-4">
+                    Quantity
+                </h2>
+                <input type="number">
+            </div>
+            <br>
+            <div>
+                <h2 class="text-muted mt-4">
+                Product Number
+                </h2>
+                <input class = "textboxID" type="text">
+                <br>
+                <br>
+      <span>
+          <span class="btn btn-success">Edit</span>
+          <span class="btn btn-secondary">Add</span>
+          <span class="btn btn-warning">Delete</span>
+      </span>
+      <!-- Button with Popup -->
+      <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+        SAVE CHANGES
+      </button>
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">NOTE</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Are you sure about making these changes?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-info">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!--Order modification section End-->
+
+</body>
+         <!-- Footer Section Begin -->
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="footer__about">
+                    <h6>Address </h6>
+                    <ul>
+                        <li>Canada -Monterial </li>
+                        <li>Phone:(+514 568-4823) </li>
+                        <li>Email:ahmadabd2000ul@gmail.com </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="footer__widget">
+                    <h6>Join US</h6>
+                    <div class="footer__widget__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__copyright">
+                    <div class="footer__copyright__text">
+              Copyright &copy;2021  by Group name        
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->

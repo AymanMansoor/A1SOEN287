@@ -25,6 +25,7 @@ function calculateTotalCost() {
     }
 } 
 
+//-----------------------------------------------------------------
 /* ORIGINAL UPLOAD ON NOV 5TH, AT 5:50PM
 function onClick(){
     var tempPrice = 0;

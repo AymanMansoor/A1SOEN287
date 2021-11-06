@@ -12,6 +12,7 @@ var productChicken = {name:"Chicken", price:6.99}; console.log(productChicken);
 //Array for each product object
 var arrayOfProductObjectsInCart = new Array(productBeef, productTikka, productChicken); console.log(arrayOfProductObjectsInCart); //3D array | not including products not currently in P4 cart
 
+//Function to calculate/display prices on click event
 function calculateTotalCost() {
     var tempPrice = 0;
     

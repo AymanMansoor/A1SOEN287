@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!--Page one P1-->
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Online Grocery ">
@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online Grocery</title>
-
+ 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -18,88 +18,173 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-
-<body>
+<body onload="updateValue('amount-Oreo')"></body>
  
-    <!-- Header Section Begin -->
-    <header class="header">      
+<body>
+  <section class="container" style="border-bottom: 1px solid #000;">
+<div class="navbar ">
+<div id="mySidenav" class="sidenav">
+<!--     mobile screen menu-->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html"  >Home</a>
+  <a href="cart.html">Cart</a>
+  <a href="contact.html" >Contact</a>
+     <a href="P5/P5text.html"><i class="fa fa-user"></i> Login</a>
+ 
+</div>
+ 
+        <div class="mobile-nav"><span class="mobile" style="font-size:38px;cursor:pointer" onclick="openNav()">&#9776;</span></div>     
+<div class="logo">   <a href="index.html"> <img src="img/original_logo.png"></a></div>
+ 
+<!--big menu-->
+    <div class="menu"><a href="P5/P5text.html"><i class="fa fa-user"></i> Login</a></div>
+    <div class="menu"><a href="contact.html" >Contact</a></div>
+    <div class="menu"> <a href="cart.html">Cart</a></div>
+    
+     <div class="menu"><a href="index.html">Home</a></div>
+ 
+</div>  
+      </section>
+    <!-- Header Section End -->
+ 
+    <!-- Side Section Begin -->
+    <section class="hero">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/mainlogo.png" alt=""></a>
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <span>Categories</span>
+                        </div>
+                        <ul>
+                            <li><a href="meat.html"> Meat & Poultry</a></li>
+                            <li><a href="frozen-food.html">Frozen Foods</a></li>
+                            <li><a href="Fruits&Vegetables.html">Fruits & Vegetables</a></li>
+                            <li><a href="Bread&Bakery.html"> Bread & Bakery</a></li>
+                            <li><a href="Dairy&Eggs.html">Dairy & Eggs</a></li>
+                            <li><a href="desserts.html">Dessert Foods</a></li>
+                            <li><a href="beverage.html">Beverages</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>                        
-                            <li><a href="#">Shopping</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="#">Shopping Details</a></li>
-                                    <li><a href="#">Shopping Cart</a></li>                 
-                                </ul>
-                            </li>
-                            <li><a href="#">Recipes </a>
-                            <ul class="header__menu__dropdown">
-                                <li><a href="./video.html">Eastern Plate</a></li>
-                                <li><a href="#">Western Plate</a></li>                 
-                            </ul>
-                           </li>
-                            <li><a href="./contact.html">Contact</a></li>
-                            <li> <a href="#"><i class="fa fa-user"></i> Login</a></li>
-                            <li><a href="./ProductList.html">All Products</a></li>
-                        </ul>
-                    </nav>
+                <div class="col-lg-9">   
+                    <div class="hero__item" >                          
+<!--                      <img src= "img/fruit.png" width = 80% height = 80% />-->
+                          <img src= "img/welcome.jpg" width = 80% height = 80% />
+                    </div>
                 </div>
             </div>
-         
         </div>
-    </header>
-    <!-- Header Section End -->
-    <div class="container container1">
+    </section>
+   <!-- Side Section End -->
+   <link rel="stylesheet" href="productsStyle.css" type="text/css">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-5">
-                <img src="img/Oreo.png">
+            <div class="col-lg-12 title">
+                <h2>Dessert Foods | Oreo </h2>
             </div>
-            <div class="col-md-7">
-                <h4 class="prod-brand">OREO</h4>
-                <h2 class="prod">Original Sandwich Cookie</h2>
-                <h2 class="prod-price"><em>$2.77 ea.</em></h2>
-                <br>
-            <div>
-                <label>Quantity:</label>
-                <input type="number" value="1">
+        </div>
+                          
+         <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="Oreo.png" class="card-img" alt="Oreo">
             </div>
-            <div>
-                <button type="button" class="btn btn-default cart"><i class="fa fa-shopping-cart"> ADD</i></button>
-            </div>
-                
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Product Description
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">Oreo</h2>
+                    <p class="card-text"><h4><i> Original Sandwich Cookie</h4></i></p>
+ 
+  <div class="row quantity">
+                        <p class="pricing">$2.77 ea.</p>
+                        <p class="pricing" style="font-size: medium;" id="totalPrice">Sub-total: $2.77</p>
+                        <div class="col-lg-12 incDecButton">
+                            <span class="input-group-btn">
+                                <button onclick="decrement('amount-Oreo'); getTotal('amount-Oreo')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                    data-type="minus" data-field="">
+                                    -
                                 </button>
-                            </h5>
+                            </span>
+                            <input id="amount-Oreo" size=3 value=1>
+                            <span class="input-group-btn">
+                                <button onclick="increment('amount-Oreo'); getTotal('amount-Oreo')" type="button" class="quantity-right-plus btn btn-secondary btn-number"
+                                    data-type="plus" data-field="">
+                                    +
+                                </button>
+                            </span>
+                            <div class="col-lg-12 addToCart"> <br/>
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
                         </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                Canada's #1 Cookie Brand - OREO Original Sandwich Cookies are grabbable, snackable, and forever dunkable. 
+                    </div>
+ 
+                </div>
+ 
+                <div class="accordian">
+                <button class = "btn btn-warning" onclick="displayText()" for= "title1"> More Description</button>
+                    <p id="description-text" style="display:none;"> <br/>
+         Canada's #1 Cookie Brand - OREO Original Sandwich Cookies are grabbable, snackable, and forever dunkable. 
                                 <br><br>
                                 Ingredients: Sugars (sugar, glucose-fructose), Wheat flour, Modified palm oil, Vegetable oil, Cocoa, Wheat and/or Corn starch, Salt, Soy lecithin, Baking soda, Ammonium bicarbonate, Unsweetened chocolate, Artificial flavour. Contains: Wheat, Soy.
                                 <br><br>
                                 Product Number: 1122334455
-                            </div>
-                        </div>
+                 </p>
+              
+                </div>
+ 
+            </div>
+       </div>
+    </div>
+                                                      
+<!-- Footer section Begin -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="footer__about">
+                    <h6>Contact us </h6>
+                    <ul>
+                        <li>Montreal, QC</li>
+                        <li>Phone:(514) 800-8001 </li>
+                        <li>Email:info@foodmoji.com </li>
+                        <li>7869 Rue Tonty, Montreal QC, Y7A 9B8</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="footer__widget">
+                    <h6>Join US</h6>
+                    <div class="footer__widget__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>                 
                     </div>
                 </div>
-
-                
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__copyright">
+                    <div class="footer__copyright__text">
+              Copyright &copy;2021  by Foodmoji      
+                </div>
+            </div>
+        </div>
+        </div></div>
+</footer>
+<!-- Footer Section End -->
+ 
+
+ 
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/myjs.js"></script>
+<script src="functions.js"></script>
+
+ 
 </body>
+</html>

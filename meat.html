@@ -18,12 +18,19 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="ProductsStyle.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
+
+<body onload='updateValues()'>
+
 
 <body>
  
-    <!-- Header Section Begin -->
- <section class="container" style="border-bottom: 1px solid #000;"> 
+  <section class="container" style="border-bottom: 1px solid #000;"> 
 <div class="navbar ">
  <div id="mySidenav" class="sidenav">
 <!--     mobile screen menu-->
@@ -44,7 +51,6 @@
     <div class="menu"> <a href="cart.html">Cart</a></div> 
     
      <div class="menu"><a href="index.html">Home</a></div>
-    
 
 </div>   
       </section> 
@@ -60,142 +66,241 @@
                             <span>Categories</span>
                         </div>
                         <ul>
-                          <li><a href="meat.html"> Meat & Poultry</a></li>
-                          <li><a href="frozen-food.html">Frozen Foods</a></li>
-                          <li><a href="Fruits&Vegetables.html">Fruits & Vegetables</a></li>
-                          <li><a href="Bread&Bakery.html"> Bread & Bakery</a></li>
-                          <li><a href="Dairy&Eggs.html">Dairy & Eggs</a></li>
-                          <li><a href="desserts.html">Dessert Foods</a></li>
-                          <li><a href="beverage.html">Beverages</a></li>   
+                            <li><a href="meat.html"> Meat & Poultry</a></li>
+                            <li><a href="frozen-food.html">Frozen Foods</a></li>
+                            <li><a href="Fruits&Vegetables.html">Fruits & Vegetables</a></li>
+                            <li><a href="Bread&Bakery.html"> Bread & Bakery</a></li>
+                            <li><a href="Dairy&Eggs.html">Dairy & Eggs</a></li>
+                            <li><a href="deserts.html">Dessert Foods</a></li>
+                            <li><a href="beverage.html">Beverages</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-9">    
-                  <div class="hero__item" >                           
+                    <div class="hero__item" >                           
 <!--                      <img src= "img/fruit.png" width = 80% height = 80% />-->
-                        <img src= "img/welcome.jpg" width = 80% height = 80% />
-                  </div>
-              </div>
-                <div class="col-lg-9 listing-products">  
-<!--begin of  listing the products of meat category-->
-   <div class="container">
-        <h3>Meat & Poultry</h3>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="product-top">
-                    <a href="products-preview/beef-product-page.html"><img src="img/beef.jpg"></a>
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="View"><a href="products-preview/beef-product-page.html"><i class="fa fa-eye"></i></a></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></button>
+                          <img src= "img/welcome.jpg" width = 80% height = 80% />
                     </div>
-                </div>
-                <div class="product-bottom text-center">
-                    <h4>Beef<br></h4>
-                    <h5>$10.90 </h5>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="product-top">
-                    <a href="products-preview/chicken-product-page.html"><img src="img/chicken.jpg"></a>
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="View"><a href="products-preview/chicken-product-page.html"><i class="fa fa-eye"></i></a></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></button>
-                    </div>
-                </div>
-                <div class="product-bottom text-center">
-                    <h4>Chicken</h4>
-                    <h5>$6.99 </h5>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="product-top">
-                    <a href="products-preview/turkey-product-page%20.html"><img src="img/turkey.jpg"></a>
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="View"><a href="products-preview/turkey-product-page%20.html"><i class="fa fa-eye"></i></a></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></button>
-                    </div>
-                </div>
-                <div class="product-bottom text-center">
-                    <h4>Turkey</h4>
-                    <h5>$8.99</h5>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="product-top">
-                    <a href="#"><img src="img/guinea.jpg"></a>
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="View"><a href="#"><i class="fa fa-eye"></i></a></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></button>
-                    </div>
-                </div>
-                <div class="product-bottom text-center">
-                    <h4>Guinea Fowl</h4>
-
-                    <h5>$6.99</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-<!--end of the products cards--> 
-    
-    
-      
-    </div>
-</div>
-<!--end of the listing-->
-                   
                 </div>
             </div>
         </div>
     </section>
     <!-- Side Section End -->
+	
+	 <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 title">
+                <h3>Meat & Poultry</h3>
+            </div>
+        </div>
+		
+		<!-- Items -->
+    <div class="card-deck">
 
-    
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
 
-<!--
-Montreal, QC
- emojifood@emojifood.com
- (514) 800-8001
- 7869 Rue Tonty, Montreal QC, Y7A 9B8
--->
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="footer__about">
-                        <h6>Contact us </h6>
-                        <ul>
-                            <li>Montreal, QC</li>
-                            <li>Phone:(514) 800-8001 </li>
-                            <li>Email:info@foodmoji.com </li>
-                            <li>7869 Rue Tonty, Montreal QC, Y7A 9B8</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="footer__widget">
-                        <h6>Join US</h6>
-                        <div class="footer__widget__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>                  
+                <div class="card">
+                    <a class="item-link" href="beef.html">
+                        <img class="card-img-top" src="img/beef.jpg" alt="Beef">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Beef</h5>
+                            <p class="card-text">100% Canadian Beef</p>
+                            <p class="card-text"><small class="text-muted">5 lbs</small></p>
                         </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$10.90 ea.</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-beef')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-beef" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-beef')" type="button" class="quantity-right-plus btn btn-secondary btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart"> <br/>
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer__copyright">
-                        <div class="footer__copyright__text">
-                  Copyright &copy;2021  by Foodmoji       
+			
+			<div class="col-lg-3 col-md-4">
+
+                <div class="card">
+                    <a class="item-link" href="chicken.html">
+                        <img class="card-img-top" src="img/chicken.jpg" alt="Chicken">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken</h5>
+                            <p class="card-text">100% Canadian Chicken</p>
+                            <p class="card-text"><small class="text-muted"> 6 lbs</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$6.99 ea.</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-chicken')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-chicken" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-chicken')" type="button" class="quantity-right-plus btn btn-secondary btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart"> <br/>
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            </div></div>
-    </footer>
-    <!-- Footer Section End -->
-    <script src="js/jquery-3.0.0.min.js"></script>
+			
+		<div class="col-lg-3 col-md-4">
+
+                <div class="card">
+                    <a class="item-link" href="turkey.html">
+                        <img class="card-img-top" src="img/turkey.jpg" alt="Turkey">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Turkey</h5>
+                            <p class="card-text">100% Canadian Turkey</p>
+                            <p class="card-text"><small class="text-muted"> 9 lbs </small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$8.99 ea.</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-turkey')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-turkey" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-turkey')" type="button" class="quantity-right-plus btn btn-secondary btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart"> <br/>
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+			
+			<div class="col-lg-3 col-md-4">
+
+                <div class="card">
+                    <a class="item-link" href="GuineaFowl.html">
+                        <img class="card-img-top" src="img/guinea.jpg" alt="GuineaFowl">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Guinea Fowl </h5>
+                            <p class="card-text">100% Canadian </p>
+                            <p class="card-text"><small class="text-muted">4 lbs</small></p>
+                        </div>
+                    </a>
+                    <div class="card-footer">
+                        <p class="pricing"><b>$5.99 ea.</b></p>
+
+                        <div class="row quantity">
+                            <div class="col-lg-12 incDecButton">
+                                <span class="input-group-btn">
+                                    <button onclick="decrement('amount-GuineaFowl')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                        data-type="minus" data-field="">
+                                        -
+                                    </button>
+                                </span>
+                                <input id="amount-GuineaFowl" size="3" type="text" value="1">
+                                <span class="input-group-btn">
+                                    <button onclick="increment('amount-GuineaFowl')" type="button" class="quantity-right-plus btn btn-secondary btn-number"
+                                        data-type="plus" data-field="">
+                                        +
+                                    </button>
+                                </span>
+                            </div>
+                            <div class="col-lg-12 addToCart"> <br/>
+                                <button type="button" class="btn btn-info">Add to cart</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+			
+			
+<!-- Footer section Begin -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="footer__about">
+                    <h6>Contact us </h6>
+                    <ul>
+                        <li>Montreal, QC</li>
+                        <li>Phone:(514) 800-8001 </li>
+                        <li>Email:info@foodmoji.com </li>
+                        <li>7869 Rue Tonty, Montreal QC, Y7A 9B8</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="footer__widget">
+                    <h6>Join US</h6>
+                    <div class="footer__widget__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer__copyright">
+                    <div class="footer__copyright__text">
+              Copyright &copy;2021  by Foodmoji       
+                </div>
+            </div>
+        </div>
+        </div></div>
+</footer>
+<!-- Footer Section End -->
+
+<script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/myjs.js"></script>
+<script src="functions.js"></script>
+
+
 </body>
 </html>

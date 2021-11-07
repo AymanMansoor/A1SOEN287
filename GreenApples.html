@@ -18,7 +18,13 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
+
+<body onload="updateValue('amount-GreenApples')">
 
 <body>
  
@@ -43,11 +49,11 @@
     <div class="menu"> <a href="cart.html">Cart</a></div> 
     
      <div class="menu"><a href="index.html">Home</a></div>
-    
 
 </div>   
       </section> 
     <!-- Header Section End -->
+
     <!-- Side Section Begin -->
     <section class="hero">
         <div class="container">
@@ -58,13 +64,13 @@
                             <span>Categories</span>
                         </div>
                         <ul>
-                             <li><a href="meat.html"> Meat & Poultry</a></li>
-                          <li><a href="frozen-food.html">Frozen Foods</a></li>
-                          <li><a href="Fruits&Vegetables.html">Fruits & Vegetables</a></li>
-                          <li><a href="Bread&Bakery.html"> Bread & Bakery</a></li>
-                          <li><a href="Dairy&Eggs.html">Dairy & Eggs</a></li>
-                          <li><a href="desserts.html">Dessert Foods</a></li>
-                          <li><a href="beverage.html">Beverages</a></li>  
+                                      <li><a href="meat.html"> Meat & Poultry</a></li>
+                            <li><a href="frozen-food.html">Frozen Foods</a></li>
+                            <li><a href="Fruits&Vegetables.html">Fruits & Vegetables</a></li>
+                            <li><a href="Bread&Bakery.html"> Bread & Bakery</a></li>
+                            <li><a href="Dairy&Eggs.html">Dairy & Eggs</a></li>
+                            <li><a href="desserts.html">Dessert Foods</a></li>
+                            <li><a href="beverage.html">Beverages</a></li>
                         </ul>
                     </div>
                 </div>
@@ -78,51 +84,69 @@
         </div>
     </section>
     <!-- Side Section End -->
-    <div class="container container1">
+<link rel="stylesheet" href="productsStyle.css" type="text/css">
+	<div class="container-fluid">
         <div class="row">
-            <div class="col-md-5">
-                <img src="img/greenapples.jpg">
+            <div class="col-lg-12 title">
+                <h2>Fruits and Vegetables | Green Apples </h2>
             </div>
-            <div class="col-md-7">
-                <h4 class="prod-brand">Granny Smith</h4>
-                <h2 class="prod">3 pounds(3 lbs)</h2>
-                <h2 class="prod-price"><em>$5.97 ea.</em></h2>
-                <br>
-            <div>
-                <label>Quantity:</label>
-                <input type="number" value="1">
+        </div>
+		
+		 <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="img/greenapples.jpg" class="card-img" alt="GreenApples">
             </div>
-            <div>
-                <button type="button" class="btn btn-default cart"><i class="fa fa-shopping-cart"> ADD</i></button>
-            </div>
-                
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Product Description
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">Green Apples</h2>
+                         <p class="card-text"><h4><i>Granny Smith</h4></i></p>
+                   <p class="card-text" ><small class="text-muted">3lbs </p>
+       <div class="row quantity">
+                        <p class="pricing">$5.97 ea.</p>
+                        <p class="pricing" style="font-size: medium;" id="totalPrice">Sub-total: $5.97</p>
+                        <div class="col-lg-12 incDecButton">
+                            <span class="input-group-btn">
+                                <button onclick="decrement('amount-GreenApples'); getTotal('amount-GreenApples')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                    data-type="minus" data-field="">
+                                    -
                                 </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                Granny Smith apples are fresh and organic, they are famous for their sour green apple flavor. 
-                                They have a strong tart flavor and have a bright acidic tang and They are incredibly crisp, firm, and juicy.
-                                <br><br>
-                                Ingredients: Protein, Vitamin C, and Sugars.
-                                <br><br>
-                                Product Number: 11298
+                            </span>
+                            <input id="amount-GreenApples" size=3 value=1>
+                            <span class="input-group-btn">
+                                <button onclick="increment('amount-GreenApples'); getTotal('amount-GreenApples')" type="button" class="quantity-right-plus btn btn-secondary btn-number"
+                                    data-type="plus" data-field="">
+                                    +
+                                </button>
+                            </span>
+                            <div class="col-lg-12 addToCart"> <br/>
+                                <button type="button" class="btn btn-info">Add to cart</button>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+                <div class="accordian">
+                <button class = "btn btn-warning" onclick="displayText()" for= "title1"> More Description</button>
+                    <p id="description-text" style="display:none;"> <br/>
+					
+					Granny Smith apples are fresh and organic, they are famous for their sour green apple flavor. 
+					They have a strong tart flavor and have a bright acidic tang and They are incredibly crisp, firm, and juicy.
+								 <br><br>
+                     Ingredients: Protein, Vitamin C, and Sugars.
+					  <br><br>
+                     Product Number: 11298
+				
+					</p>
+               
+                </div>
+
             </div>
         </div>
     </div>
-</body>
-  <!-- Footer Section Begin -->
+				
+<!-- Footer section Begin -->
   <footer class="footer">
     <div class="container">
         <div class="row">
@@ -159,8 +183,10 @@
         </div></div>
 </footer>
 <!-- Footer Section End -->
-         
+
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/myjs.js"></script>
+<script src="functions.js"></script>
+
 </body>
 </html>

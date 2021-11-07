@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online Grocery</title>
-
+ 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -18,38 +18,40 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-
-<body>
+<body onload="updateValue('amount-RedBull')"></body>
  
-     
-    </header>
-  <section class="container" style="border-bottom: 1px solid #000;"> 
+<body>
+  <section class="container" style="border-bottom: 1px solid #000;">
 <div class="navbar ">
- <div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav">
 <!--     mobile screen menu-->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html"  >Home</a>
   <a href="cart.html">Cart</a>
   <a href="contact.html" >Contact</a>
      <a href="P5/P5text.html"><i class="fa fa-user"></i> Login</a>
-
-</div> 
-
-        <div class="mobile-nav"><span class="mobile" style="font-size:38px;cursor:pointer" onclick="openNav()">&#9776;</span></div>      
+ 
+</div>
+ 
+        <div class="mobile-nav"><span class="mobile" style="font-size:38px;cursor:pointer" onclick="openNav()">&#9776;</span></div>     
 <div class="logo">   <a href="index.html"> <img src="img/original_logo.png"></a></div>
-
+ 
 <!--big menu-->
-    <div class="menu"><a href="P5/P5text.html"><i class="fa fa-user"></i> Login</a></div> 
-    <div class="menu"><a href="contact.html" >Contact</a></div> 
-    <div class="menu"> <a href="cart.html">Cart</a></div> 
+    <div class="menu"><a href="P5/P5text.html"><i class="fa fa-user"></i> Login</a></div>
+    <div class="menu"><a href="contact.html" >Contact</a></div>
+    <div class="menu"> <a href="cart.html">Cart</a></div>
     
      <div class="menu"><a href="index.html">Home</a></div>
-    
-
-</div>   
-      </section> 
+ 
+</div>  
+      </section>
     <!-- Header Section End -->
+ 
     <!-- Side Section Begin -->
     <section class="hero">
         <div class="container">
@@ -60,7 +62,7 @@
                             <span>Categories</span>
                         </div>
                         <ul>
-                            <li><a href="meat.html"> Meat & Poultry</a></li>
+                            li><a href="meat.html"> Meat & Poultry</a></li>
                             <li><a href="frozen-food.html">Frozen Foods</a></li>
                             <li><a href="Fruits&Vegetables.html">Fruits & Vegetables</a></li>
                             <li><a href="Bread&Bakery.html"> Bread & Bakery</a></li>
@@ -70,8 +72,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-9">    
-                    <div class="hero__item" >                           
+                <div class="col-lg-9">   
+                    <div class="hero__item" >                          
 <!--                      <img src= "img/fruit.png" width = 80% height = 80% />-->
                           <img src= "img/welcome.jpg" width = 80% height = 80% />
                     </div>
@@ -79,54 +81,70 @@
             </div>
         </div>
     </section>
-    <!-- Side Section End -->
-
-
-    <div class="container container1">
+   <!-- Side Section End -->
+   <link rel="stylesheet" href="productsStyle.css" type="text/css">
+             
+              <div class="container-fluid">
         <div class="row">
-            <div class="col-md-5">
-                <img src="img/img:RedBull.jpg">
+            <div class="col-lg-12 title">
+                <h2>Beverages | RedBull </h2>
             </div>
-            <div class="col-md-7">
-                <h4 class="prod-brand">Red Bull</h4>
-                <h2 class="prod">250mL</h2>
-                <h2 class="prod-price"><em>$2.67 ea.</em></h2>
-                <br>
-            <div>
-                <label>Quantity:</label>
-                <input type="number" value="1">
+        </div>
+                          
+         <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="RED-BULL-250ML-.jpg" class="card-img" alt="RedBull">
             </div>
-            <div>
-                <button type="button" class="btn btn-default cart"><i class="fa fa-shopping-cart"> ADD</i></button>
-            </div>
-                
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Product Description
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">RedBull</h2>
+                    <p class="card-text"><h4><i> Regular</h4></i></p>
+                   <p class="card-text"><small class="text-muted">250mL </p>
+ 
+  <div class="row quantity">
+                        <p class="pricing">$2.67 ea.</p>
+                        <p class="pricing" style="font-size: medium;" id="totalPrice">Sub-total: $2.67</p>
+                        <div class="col-lg-12 incDecButton">
+                            <span class="input-group-btn">
+                                <button onclick="decrement('amount-RedBull'); getTotal('amount-RedBull')" type="button" class="quantity-left-minus btn btn-danger btn-number"
+                                    data-type="minus" data-field="">
+                                    -
                                 </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                The everyone's favorite energy drink.
-                                <br><br>
-                                Red Bull is an energy drink that gives energy to your body. It fights mental and physical exhaution by giving your brain a boost.
-                                It is sold by Red Bull GmbH, an australian company found in 1987.
-                                <br><br>
-                                Product Number: 86733
+                            </span>
+                            <input id="amount-RedBull" size=3 value=1>
+                            <span class="input-group-btn">
+                                <button onclick="increment('amount-RedBull'); getTotal('amount-RedBull')" type="button" class="quantity-right-plus btn btn-secondary btn-number"
+                                    data-type="plus" data-field="">
+                                    +
+                                </button>
+                            </span>
+                            <div class="col-lg-12 addToCart"> <br/>
+                                <button type="button" class="btn btn-info">Add to cart</button>
                             </div>
                         </div>
                     </div>
+ 
                 </div>
+ 
+                <div class="accordian">
+                <button class = "btn btn-warning" onclick="displayText()" for= "title1"> More Description</button>
+                    <p id="description-text" style="display:none;"> <br/>
+        The everyone's favorite energy drink.
+                     <br><br>
+                      Red Bull is an energy drink that gives energy to your body. It fights mental and physical exhaution by giving your brain a boost.
+                                It is sold by Red Bull GmbH, an australian company found in 1987.
+                    <br><br>
+                Product Number: 86733
+                 </p>
+              
+                </div>
+ 
             </div>
-        </div>
+       </div>
     </div>
-</body>
-<!-- Footer Section Begin -->
+                                                      
+<!-- Footer section Begin -->
   <footer class="footer">
     <div class="container">
         <div class="row">
@@ -147,7 +165,7 @@
                     <div class="footer__widget__social">
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>                  
+                        <a href="#"><i class="fa fa-twitter"></i></a>                 
                     </div>
                 </div>
             </div>
@@ -156,15 +174,20 @@
             <div class="col-lg-12">
                 <div class="footer__copyright">
                     <div class="footer__copyright__text">
-              Copyright &copy;2021  by Foodmoji       
+              Copyright &copy;2021  by Foodmoji      
                 </div>
             </div>
         </div>
         </div></div>
 </footer>
 <!-- Footer Section End -->
-         
+ 
+
+ 
 <script src="js/jquery-3.0.0.min.js"></script>
 <script src="js/myjs.js"></script>
+<script src="functions.js"></script>
+
+ 
 </body>
 </html>

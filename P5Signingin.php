@@ -55,6 +55,36 @@ if(isset($_POST['login-btn'])){ //All action starts when submit button has been 
         echo "This user does not exist"; //need to fix this to be an actual alert
     } else if($errorsPassword >= 1) {
         echo "The password inputted is incorrect";
-    }  
+    }
+    
+    /*Keep the user logged in while navigating */
+    if(isset($_SESSION["loginInfo"]))
+    //Saving the username and password as cookies 
+    if(!empty($_POST["rememberme"]))
+    {
+        //Username stored for 10 years
+        setcookie("username", $xmlUsername, time()+(10*365*24*60*60));
+
+        //Password stored for 10 years
+        setcookie("password", $xmlPassword, time()+(10*365*24*60*60));
+
+        $_SESSION["loginInfo"] =  $loginInfo;
+    }
+    else
+    {
+        if(isset($_COOKIE["username"]))
+        {
+            setcookie("username", "");
+        }
+        if(isset($_COOKIE["username"]))
+        {
+            setcookie("password", "");
+        }
+        else
+        {
+            $message = "Invalid Login Credentials";
+        }
+    }
+
 }
 ?>

@@ -101,19 +101,19 @@
                 <th scope="col" style="text-align: center;">Actions</th>
             </tr>
             <tbody>
-                <tr style="text-align: center;">
-                    <td> Quebon 2% Milk </td>
-                    <td>0123456789</td>
-                    <td>
+                <tr id="row1" style="text-align: center;">
+                    <td id="name_1"> Quebon 2% Milk </td>
+                    <td id="number_1"> 0123456789</td>
+                    <td id="quantity_1">
                         <h6>10</h6>
                     </td>
-                    <td>
+                    <td id="price_1">
                         <h6> $3.90 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <div class="btn btn-warning">Delete</div>
-                            </div>
+                            <input type="button" id="edit_button" value="edit" class="edit" oneclick="edit_row('1')">
+                            <input type="button" id="save_button" value="save" class="save" oneclick="save_row('1')">
+                            <input type="button" id="delete_button" value="delete" class="delete" oneclick="delete_row('1')">
                     </td>
                   </tr>
                   <tr style="text-align: center;">

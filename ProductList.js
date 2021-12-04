@@ -1,11 +1,11 @@
 function edit_row(no)
 { document.getElementById("edit_button"+no).style.display="none";
-document.getElementById("save_button"+no).style.display="none";
+document.getElementById("save_button"+no).style.display="block";
 
-    var name=document.getElementById("name_"+no);
-    var number=document.getElementById("number_"+no);
-    var quantity=document.getElementById("quantity_"+no);
-    var price=document.getElementById("price_"+no);
+    var name=document.getElementById("name_row"+no);
+    var number=document.getElementById("number_row"+no);
+    var quantity=document.getElementById("quantity_row"+no);
+    var price=document.getElementById("price_row"+no);
 
         var name_data=name.innerHTML;
         var number_data=number.innerHTML;

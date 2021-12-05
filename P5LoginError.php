@@ -122,7 +122,7 @@ if($_SESSION['submitLogin']){
                 <input type="checkbox" name="remember" checked="checked"/>Remember me
             </label>
        
-            <button type="submit" class="button" value="Submit Form" name="login-btn">Log In</button>
+            <button type="submit" class="button" value="Submit Form" name="login-btn">LOG IN</button>
         </div>
     
         <div class="forgot-pass-link">

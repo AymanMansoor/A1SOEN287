@@ -50,8 +50,7 @@
   <div class="menu"><a href="P5text.html"><i class="fa fa-user"></i> Login</a></div> 
   <div class="menu"><a href="contact.html" >Contact</a></div> 
   <div class="menu"> <a href="P4Cart.html">Cart</a></div> 
-  
-   <div class="menu"><a href="index.html">Home</a></div>
+  <div class="menu"><a href="index.html">Home</a></div>
   
 
 </div>   
@@ -89,14 +88,14 @@
   <!-- Side Section End -->
 
 <div class="container-2">
-    <form action="" class="email-pass" id="login-form">
+    <form action="P5Signingin.php" method="post" class="email-pass" id="login-form">
         <div class="page-header">
             <b><h3>Already have an account? Sign in</h3></b>
         </div>
     
         <div class="box2">    
-            <input type="text" class="form-control" id="eml" placeholder="Email" type="email" class="eml" size="40" required>
-            <input type="text" class="form-control" id="pswrd" placeholder="Password" name="pswrd" size="40" required>
+            <input type="text" name="email" class="form-control" id="eml" placeholder="Email" type="email" class="eml" size="40" required>
+            <input type="text" name="pswrd" class="form-control" id="pswrd" placeholder="Password" size="40" required>
         </div>
     
         <div class="remember-login">
@@ -104,7 +103,8 @@
                 <input type="checkbox" name="remember" checked="checked"/>Remember me
             </label>
        
-            <input type="button" class="button" value="LOG IN" />
+            <!--Changed the button type from the original-->
+            <button type="submit" class="button" value="Submit Form" name="login-btn">LOG IN</button>
         </div>
     
         <div class="forgot-pass-link">
@@ -115,7 +115,7 @@
     
         <div class="box3">
             <b><h2>Don't have an account?</h2></b>
-            <a href="P6text.html" id="sun" class="form-control" role="button">SIGN UP NOW</a>
+            <a href="P6text.html" id="sun" class="form-control">SIGN UP NOW</a>
         </div>
     </form>
 </div>

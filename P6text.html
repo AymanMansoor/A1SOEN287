@@ -39,10 +39,9 @@
 <a href="index.html"  >Home</a>
 <a href="P4Cart.html">Cart</a>
 <a href="contact.html" >Contact</a>
-<a href="P5text.html"><i class="fa fa-user"></i> Login</a>
+<a href="P5text.html"><i class="fa fa-user"></i>Login</a>
 
 </div> 
-
       <div class="mobile-nav"><span class="mobile" style="font-size:38px;cursor:pointer" onclick="openNav()">&#9776;</span></div>      
 <div class="logo">   <a href="index.html"> <img src="img/original_logo.png"></a></div>
 
@@ -94,10 +93,10 @@
         <div class="form-control" id="maintitle"><b><h4>Sign Up</h4></b></div>
 
         <!--The form to fill out-->
-        <form action="" class="formbox">
+        <form action="P6Signingup.php" method="POST" class="formbox">
             <div class="box-1"> <!---Names input-->
-                <input type="text" class="form-control" id="FNtext" placeholder="First name*" required>
-                <input type="text" class="form-control" id="LNtext" placeholder="Last name*" required>
+                <input type="text" class="form-control" id="FNtext" name="Firstname" placeholder="First name*" required>
+                <input type="text"  class="form-control" id="LNtext" name="Lastname" placeholder="Last name*" required>
                 <div class=container1><h5>*Mandatory field</h5></div>
                 <hr style="width:94%">
             </div>
@@ -105,7 +104,7 @@
             <div class="box-2"> <!--Email and Password field-->
                 <input type="text" class="form-control" id="email" type="email" name="Email" placeholder="Email*" size="40" required>
                 <input type="text" class="form-control" id="password" type="password" name="Password" placeholder="Password*" size="40" required>
-                <input type="text" class="form-control" id="confpswrd" type="password" placeholder="Confirm Password*" required>
+                <input type="text" class="form-control" id="confpswrd" type="password" name="ConfirmPassword" placeholder="Confirm Password*" required>
             </div>
     
             <div class="box-3"> <!--Address signup-->

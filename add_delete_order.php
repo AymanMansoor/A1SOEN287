@@ -71,15 +71,7 @@
                     session_start();
                     $xml = simplexml_load_file('order_info.xml');
                     if (isset($_POST['insert'])){
-                        //$xml = simplexml_load_file('order_info.xml');
-                        //$currentAmount = $xml->amount;
-                        //$newOrder = $xml -> order_list-> addChild("order");
-                        //$newUser = $xml ->addChild("user", $_POST['user']);
-                        //$newOrderNum = $xml ->addChild("order_num", $_POST['order_num']);
-                        //$newOrderList = $xml ->addChild("orderList", $_POST['orderList']);
-                        //$xml->amount = intval($currentAmount)+1;
-                        //$xml->asXML("../../order_info.xml");
-
+                       ]
                         $xml = new DomDocument("1.0", "UTF-8");
                         $xml -> load('order_info.xml');
 

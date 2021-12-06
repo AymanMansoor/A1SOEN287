@@ -21,13 +21,51 @@
 </head>
 
 <body>
-      <script>
-     function deleteRow(r) {
+
+<script>
+
+function deleteRow(r) {
   var i = r.parentNode.parentNode.rowIndex;
   document.getElementById("table").deleteRow(i);
 }
 
-  </script>
+function edit_row(no)
+{
+ document.getElementById("edit_button"+no).style.display="none";
+ document.getElementById("save_button"+no).style.display="block";
+
+ var ProductInventory=document.getElementById("ProductInventory_row"+no);
+ var ProductPrice=document.getElementById("ProductPrice_row"+no);
+ var ProductDescription=document.getElementById("ProductDescription_row"+no);
+ 
+
+ var ProductInventory_data=ProductInventory.innerHTML;
+ var ProductPrice_data=ProductPrice.innerHTML;
+ var ProductDescription_data=ProductDescription.innerHTML;
+ 
+
+ ProductInventory.innerHTML="<input type='text' id='ProductInventory_text"+no+"' value='"+ProductInventory_data+"'>";
+ ProductPrice.innerHTML="<input type='text' id='ProductPrice_text"+no+"' value='"+ProductPrice_data+"'>";
+ ProductDescription.innerHTML="<input type='text' id='ProductDescription_text"+no+"' value='"+ProductDescription_data+"'>";
+ 
+
+}
+function save_row(no)
+{
+    var ProductInventory_val=document.getElementById("ProductInventory_text"+no).value;
+    var ProductPrice_val=document.getElementById("ProductPrice_text"+no).value;
+    var ProductDescription_val=document.getElementById("ProductDescription_text"+no).value;
+    
+    document.getElementById("ProductInventory_row"+no).innerHTML=ProductInventory_val;
+    document.getElementById("ProductPrice_row"+no).innerHTML=ProductPrice_val;
+    document.getElementById("ProductDescription_row"+no).innerHTML=ProductDescription_val;
+    
+   
+    document.getElementById("edit_button"+no).style.display="block";
+    document.getElementById("save_button"+no).style.display="none";
+
+}
+</script>
 
      
     </header>
@@ -141,84 +179,64 @@ justify-content: center;
             </tr>
             <tbody>
                 
-                <tr style="text-align: center;">
+                <tr id="row1"  style="text-align: center;">
                     <td> Quebon 2% Milk </td>
-                    <td>0123456789</td>
+                    <td id="ProductDescription_row1">0123456789</td>
+                    <td id="ProductInventory_row1">10</td>
+                    <td id="ProductPrice_row1">$3.90</td>
                     <td>
-                        <h6>10</h6>
-                    </td>
-                    <td>
-                        <h6> $3.90 </h6>
-                    </td>
-                    <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                             <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
-                  <tr style="text-align: center;">
+                  <tr id="row2" style="text-align: center;">
                     <td> Selection - White Eggs - Extra Large </td>
-                    <td>8881199263</td>
+                    <td id="ProductDescription_row2">8881199263</td>
+                    <td id="ProductInventory_row2">10</td>
+                    <td id="ProductPrice_row2">$4.19</td>
                     <td>
-                        <h6>10</h6>
-                    </td>
-                    <td>
-                        <h6> $4.19 </h6>
-                    </td>
-                    <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('2')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('2')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
-                  <tr style="text-align: center;">
+                  <tr id="row3" style="text-align: center;">
                     <td> Philadelphia - Original Cream Cheese </td>
-                    <td>7777342536</td>
+                    <td id="ProductDescription_row3">7777342536</td>
+                    <td id="ProductInventory_row3">10</td>
+                    <td id="ProductPrice_row3">$5.49</td>
                     <td>
-                        <h6>10</h6>
-                    </td>
-                    <td>
-                        <h6> $5.49 </h6>
-                    </td>
-                    <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                           <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('3')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('3')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
-                  <tr style="text-align: center;">
+                  <tr id="row4" style="text-align: center;">
                     <td> Activia - Vanilla Yogurt</td>
-                    <td>9936542637</td>
+                    <td id="ProductDescription_row4">9936542637</td>
+                    <td id="ProductInventory_row4">10</td>
+                    <td id="ProductPrice_row4">$5.29</td>
                     <td>
-                        <h6>10</h6>
-                    </td>
-                    <td>
-                        <h6> $5.29 </h6>
-                    </td>
-                    <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('4')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('4')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
-                  <tr style="text-align: center;">
+                  <tr id="row5" style="text-align: center;">
                     <td> Driscoll's - Blackberries </td>
-                    <td>12345</td>
+                    <td id="ProductDescription_row5">12345</td>
+                    <td id="ProductInventory_row5">10</td>
+                    <td id="ProductPrice_row5">$5.45</td>
                     <td>
-                        <h6>10</h6>
-                    </td>
-                    <td>
-                        <h6> $5.45 </h6>
-                    </td>
-                    <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                           <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('5')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('5')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Granny Smith - Green Apples</td>
-                    <td>11298</td>
+                    <td id="ProductDescription_row6">11298</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -226,14 +244,14 @@ justify-content: center;
                         <h6> $5.97 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('6')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('6')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Essex Kent - Whole Mushrooms</td>
-                    <td>98373</td>
+                    <td id="ProductDescription_row7">98373</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -241,14 +259,14 @@ justify-content: center;
                         <h6> $4.39 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                           <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('7')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('7')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Campar tomatoes</td>
-                    <td>57329</td>
+                    <td id="ProductDescription_row8">57329</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -256,14 +274,14 @@ justify-content: center;
                         <h6> $3.97 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                           <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('8')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('8')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Grainhouse - Soft Slice</td>
-                    <td>77777548953</td>
+                    <td id="ProductDescription_row9">77777548953</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -271,14 +289,14 @@ justify-content: center;
                         <h6> $5.99 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('9')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('9')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> St.Pierre - Sliced Brioche Loaf</td>
-                    <td>88773849</td>
+                    <td id="ProductDescription_row10">88773849</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -286,14 +304,14 @@ justify-content: center;
                         <h6> $11.99 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('10')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('10')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Pepperidge - Whole Wheat Thin Slice</td>
-                    <td>99918729</td>
+                    <td id="ProductDescription_row11">99918729</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -301,14 +319,14 @@ justify-content: center;
                         <h6> $8.50 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('11')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('11')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> TwoBite - Cinnamon Roles</td>
-                    <td>001928357</td>
+                    <td id="ProductDescription_row12">001928357</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -316,14 +334,14 @@ justify-content: center;
                         <h6> $14.67 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('12')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('12')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Oreo - Original Sandwich Cookie</td>
-                    <td>1122334455</td>
+                    <td id="ProductDescription_row13">1122334455</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -331,14 +349,14 @@ justify-content: center;
                         <h6> $2.77 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('13')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('13')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> McCain - Marble Cake</td>
-                    <td>6633552438</td>
+                    <td id="ProductDescription_row14">6633552438</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -346,14 +364,14 @@ justify-content: center;
                         <h6> $4.47 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                           <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('14')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('14')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Ben & Jerry's - Chocolate Chip Cookie Dough Ice Cream</td>
-                    <td>9999966666</td>
+                    <td id="ProductDescription_row15">9999966666</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -361,14 +379,14 @@ justify-content: center;
                         <h6> $6.47 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('15')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('15')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Popsicle - Lifesavers</td>
-                    <td>8888833333</td>
+                    <td id="ProductDescription_row16">8888833333</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -376,14 +394,14 @@ justify-content: center;
                         <h6> $5.97 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('16')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('16')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Fiji Water</td>
-                    <td>86766</td>
+                    <td id="ProductDescription_row17">86766</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -391,14 +409,14 @@ justify-content: center;
                         <h6> $1.99 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('17')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('17')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Minute Maid - Apple juice</td>
-                    <td>86755</td>
+                    <td id="ProductDescription_row18">86755</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -406,14 +424,14 @@ justify-content: center;
                         <h6> $1.47 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                          <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('18')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('18')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Coca Cola</td>
-                    <td>86744</td>
+                    <td id="ProductDescription_row19">86744</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -421,14 +439,14 @@ justify-content: center;
                         <h6> $2.25 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('19')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('19')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Red Bull</td>
-                    <td>86733</td>
+                    <td id="ProductDescription_row20">86733</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -436,14 +454,14 @@ justify-content: center;
                         <h6> $2.67 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('20')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('20')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Beef</td>
-                    <td>111234</td>
+                    <td id="ProductDescription_row21">111234</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -451,14 +469,14 @@ justify-content: center;
                         <h6> $10.90 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                          <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('21')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('21')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Chicken</td>
-                    <td>112345</td>
+                    <td id="ProductDescription_row22">112345</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -466,14 +484,14 @@ justify-content: center;
                         <h6> $6.99 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('22')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('22')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Turkey</td>
-                    <td>889256</td>
+                    <td id="ProductDescription_row23">889256</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -481,14 +499,14 @@ justify-content: center;
                         <h6> $8.99 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                          <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('23')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('23')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td>  Guinea Fowl </td>
-                    <td>887654</td>
+                    <td id="ProductDescription_row24">887654</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -496,14 +514,14 @@ justify-content: center;
                         <h6> $6.99 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                           <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('24')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('24')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Chicken Tikka</td>
-                    <td>99875</td>
+                    <td id="ProductDescription_row25">99875</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -511,14 +529,14 @@ justify-content: center;
                         <h6> $10.99 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                           <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('25')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('25')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Chicken Griller</td>
-                    <td>22345</td>
+                    <td id="ProductDescription_row26">22345</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -526,14 +544,14 @@ justify-content: center;
                         <h6> $26.99 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                            <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('26')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('26')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Potato Pancake</td>
-                    <td>33452</td>
+                    <td id="ProductDescription_row27">33452</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -541,14 +559,14 @@ justify-content: center;
                         <h6> $8.99 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                           <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('27')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('27')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                   <tr style="text-align: center;">
                     <td> Sweet Corn</td>
-                    <td>33456</td>
+                    <td id="ProductDescription_row28">33456</td>
                     <td>
                         <h6>10</h6>
                     </td>
@@ -556,9 +574,9 @@ justify-content: center;
                         <h6> $11.99 </h6>
                     </td>
                     <td>
-                            <a href="editAproduct.html" class="btn btn-success">Edit</a>
-                           <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
-                            </div>
+                        <input type="button" class="btn btn-secondary" id="edit_button1" value="Edit" class="edit" onclick="edit_row('28')">
+                        <input type="button" class="btn btn-success" id="save_button1" value="Save" class="save" onclick="save_row('28')">
+                        <input type="button" value="Delete" class="btn btn-warning" onclick="deleteRow(this)">
                     </td>
                   </tr>
                 </table>

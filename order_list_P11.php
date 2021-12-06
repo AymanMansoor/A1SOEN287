@@ -260,7 +260,7 @@
                         </div>
                         <ul><!--added this-->
                             <li><a href="ProductList.html">All Products</a></li>
-                            <li><a href="order_list _P11.php">Order List</a></li>  
+                            <li><a href="order_list_P11.php">Order List</a></li>  
                             <li><a href="p9.html">User List</a></li>  
                         </ul>
                     </div>

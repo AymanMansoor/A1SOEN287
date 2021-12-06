@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <order_list>
+        <order>
+            <user>Luis Pierre</user>
+            <order_num>097653</order_num>
+            <orderList> CQUEBON Milk, Campar tomatoes, White eggs(XL)  </orderList>
+			<price> 12.06$  </price>
+        </order>
+		
+        <order>
+            <user>Tokyo Kevin</user>
+            <order_num>086437</order_num>
+            <orderList> Blackberry, Vanilla Yogurt, Cinnamon Rolls, Water Bottle </orderList>
+			<price> 27.4$   </price>
+        </order>
+
+        <order>
+            <user>Cayla Justin</user>
+            <order_num>12331</order_num>
+            <orderList> Oreo, Essex Kent Mushroom, Brioche, White Bread, Green Apples </orderList>
+			<price> 31.11$  </price>
+        </order>
+
+        <order>
+            <user>Talin Patel</user>
+            <order_num>121345</order_num>
+            <orderList> Cream Cheese, White Eggs(XL), Beef </orderList>
+			<price> 20.67$  </price>
+        </order>
+        <order>
+            <user>Marian Kandalaft</user>
+            <order_num>987522</order_num>
+            <orderList> 2x Popsicle, Chocolate Chip Cookie Dough Ice Cream, Marble Cake, 3x RedBull, Chicken Griller </orderList>
+			<price> 57.88$ </price>
+        </order>
+
+        <order>
+            <user>Myriam White</user>
+            <order_num>234233</order_num>
+            <orderList> BlackBerry, Apple Juice, Water bottle, Tomatoes, white Bread, 4x coca-cola, Thin Sliced Whole Wheat, Mushroom </orderList>
+			<price> 40.76$ </price>
+        </order>
+
+    </order_list>

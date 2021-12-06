@@ -27,46 +27,13 @@
 
 </head>
 
-<body>
-  <script>
-     function deleteRow(r) {
-  var i = r.parentNode.parentNode.rowIndex;
-  document.getElementById("table").deleteRow(i);
-}
-
-  </script>
-
-     
+<body>   
     </header>
    
-    <style>
-      #table {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-      .modal-footer {
-justify-content: center;
-}
-#table td, #table th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#table tr:nth-child(even){background-color: #f2f2f2;}
-
-#table tr:hover {background-color: #ddd;}
-
-#table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #0489aa;
-  color: white;
-}
-
-    </style>
+    <link rel="stylesheet" href="css/p9.css" type="text/css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src = "p9.js"></script>
+      <link rel="stylesheet" href="css/p9.css" type="text/css">
   <section class="container" style="border-bottom: 1px solid #000;"> 
 <div class="navbar ">
  <div id="mySidenav" class="sidenav">
@@ -105,13 +72,12 @@ justify-content: center;
                         </div>
                         <ul>
                             <li><a href="meat.html"> Meat & Poultry</a></li>
-                            <li><a href="frozen-food.html">Frozen Food</a></li>
-                            <li><a href="#">Fruit</a></li>
-                            <li><a href="#"> Berries</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Dairy</a></li>
+                          <li><a href="frozen-food.html">Frozen Foods</a></li>
+                          <li><a href="Fruits&Vegetables.html">Fruits & Vegetables</a></li>
+                          <li><a href="Bread&Bakery.html"> Bread & Bakery</a></li>
+                          <li><a href="Dairy&Eggs.html">Dairy & Eggs</a></li>
+                          <li><a href="desserts.html">Dessert Foods</a></li>
+                          <li><a href="beverage.html">Beverages</a></li>
                         </ul>
                     </div>
                 </div>
@@ -146,59 +112,65 @@ justify-content: center;
   <table id="table">
   <thead>
     <tr>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Options</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Options</th>
     </tr>
   </thead>
   <tbody>
       <tr>
-      <td>Luis</td>
-      <td>Pierre</td>
+        <td class="data">Luis</td>
+      <td class="data">Pierre</td>
       <td>
-        <a href = "p10.html" class="btn btn-secondary">Edit </button></a>
-        <input type="button" value="Delete" class="btn btn-info" onclick="deleteRow(this)">
+        <button class="save">Save</button>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
           
         </td>
      </tr>
       <tr>
-      <td>Tokyo</td>
-      <td>Kevin</td>
+       <td class="data">Tokyo</td>
+       <td class="data">Kevin</td>
       <td> 
-           <a href = "p10.html" class="btn btn-secondary">Edit</button></a>
-           <input type="button" value="Delete" class="btn btn-info" onclick="deleteRow(this)">
+            <button class="save">Save</button>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
         </td>
     </tr>
       <tr>
-      <td>Cayla</td>
-      <td> Justin</td>
+     <td class="data">Cayla</td>
+      <td class="data"> Justin</td>
       <td>
-         <a href = "p10.html" class="btn btn-secondary">Edit</button></a>
-         <input type="button" value="Delete" class="btn btn-info" onclick="deleteRow(this)">
+           <button class="save">Save</button>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
         </td>
     </tr>
       <tr>
-      <td>Talin</td>
-      <td>Patel</td>
+      <td class="data">Talin</td>
+      <td class="data">Patel</td>
        <td>
-          <a href = "p10.html" class="btn btn-secondary">Edit</button></a>
-          <input type="button" value="Delete" class="btn btn-info" onclick="deleteRow(this)">
+          <button class="save">Save</button>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
         </td>
     </tr>
       <tr>
-      <td>Marian</td>
-      <td>Kandalaft</td>
+       <td class="data">Marian</td>
+       <td class="data">Kandalaft</td>
        <td>
-          <a href = "p10.html" class="btn btn-secondary">Edit</button></a>
-          <input type="button" value="Delete" class="btn btn-info" onclick="deleteRow(this)">
+         <button class="save">Save</button>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
         </td>
     </tr>
       <tr>
-      <td>Myriam</td>
-      <td>White</td>
+      <td class="data">Myriam</td>
+      <td class="data">White</td>
       <td>
-         <a href = "p10.html" class="btn btn-secondary">Edit</button></a>
-           <input type="button" value="Delete" class="btn btn-info" onclick="deleteRow(this)">
+         <button class="save">Save</button>
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
         </td>
     </tr>
   </tbody>

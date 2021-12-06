@@ -3,7 +3,7 @@ session_start();
 $message ="";
 if($_SESSION['submitLogin']){
     if($_SESSION['wrongEmail']){
-        $message = "The email you inputted is wrong";
+        $message = "The email you inputted does not exist";
         $_SESSION['wrongEmail'] = false;
     }
     if($_SESSION['wrongPassword']){

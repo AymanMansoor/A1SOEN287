@@ -5,7 +5,7 @@ $message = "";
 if($_SESSION['submitted']){
     if($_SESSION['nameErr']){
         $message = "This person already exists ";
-        $_SESSION['personErr'] = false;
+        $_SESSION['nameErr'] = false;
     }
     if($_SESSION['emailErr']){
         $message = "This email is already in use ";

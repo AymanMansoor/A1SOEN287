@@ -50,8 +50,9 @@ if(isset($_POST['login-btn'])){ //All action starts when submit button has been 
                 }
         } else 
             {
+                $_SESSION['wrongPassword'] = false;
                 $_SESSION['wrongEmail'] = true;
-                header("Location: P5LoginError.php"); //logical issue with this when iterating in the for loop to find the email match
+                header("Location: P5LoginError.php"); 
             }
     } //end of for loop
 

@@ -33,7 +33,7 @@ if(isset($_POST['login-btn'])){ //All action starts when submit button has been 
                     /*You have successfully signed in as Admin. You are given internal privaliges*/
                     $_SESSION['Email'] = $loginInfo["username"]; //Creates session variables for the Admin currently logged in
                     $_SESSION['Password'] = $loginInfo["password"];
-                    header("Location: P11OrderList.php"); //redirects to the backstore pages
+                    header("Location: order_list_P11.php"); //redirects to the backstore pages
                     exit();
                 } else 
                     {
